@@ -1,14 +1,20 @@
 # Delivery Notes
 
-To run this project:
+To run this project and generate your own 'apidId':
 
 1. Clone the repository.
 2. Once inside, use the terminal to go to `backend/` run `npm install` and then `sls deploy -v`. Note: I have built this project with version 1.43.0 of Serverless, since some of the exersices wouldn't work with version 2 and up.
 3. Once it's done, copy the `apiId` from the endpoints shown and paste it as the value for the `apiId` variable in the `client/src/config.ts`.
 4. In the terminal, go to `client/` run `npm install` and then `npm run start`. This should start the frontend and open a tab in the browser.
 
+To run this project with the existing one:
+
+1. Clone the repository.
+2. In the terminal, go to `client/` run `npm install` and then `npm run start`. This should start the frontend and open a tab in the browser, the endpoint that will be used to make the requests is:  `https://fgu5pmwx5k.execute-api.us-east-1.amazonaws.com/dev/`
+
 Note: I added a 'Name' to the 'Edit' page in the front-end. This wasn't really required, but I wanted to check something out. That's the reason why there is also a 'GET todo' endpoint.
 
+Note: The endpoint will become inactive once the review process is over.
 _________________________________
 
 # Serverless TODO
